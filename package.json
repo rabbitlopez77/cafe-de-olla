@@ -1,0 +1,25 @@
+{
+  "name": "cafe-de-olla",
+  "version": "1.0.0",
+  "description": "The webpage for Cafe de Olla",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabbitlopez77/cafe-de-olla.git"
+  },
+  "author": "Humberto Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rabbitlopez77/cafe-de-olla/issues"
+  },
+  "homepage": "https://github.com/rabbitlopez77/cafe-de-olla#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
