@@ -5,3 +5,14 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
+  .homePage{
+    -webkit-text-stroke: .5px black;
+    color: white;
+    
+  }
+  .contactPage {
+    color: blue;
+  }
+  .menuPage {
+    color: forestgreen;
+  }

@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "The webpage for Cafe de Olla",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "repository": {
@@ -21,5 +23,8 @@
     "css-loader": "^6.7.3",
     "style-loader": "^3.3.1",
     "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "npm-watch": "^0.11.0"
   }
 }
