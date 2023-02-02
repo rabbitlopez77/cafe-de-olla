@@ -1,6 +1,7 @@
 const mainDiv = document.getElementById('main')
 const menuPageDiv = document.createElement('div')
-menuPageDiv.classList.add('menuPage')
+menuPageDiv.classList.add('menuPage', 'notSelected')
+menuPageDiv.setAttribute('id', 'menuPage')
 mainDiv.appendChild(menuPageDiv)
 
 const menuHeader = () => {

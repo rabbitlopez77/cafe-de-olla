@@ -1,9 +1,11 @@
+
 html { 
     background: url(./coffeeBackground.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
   }
   .homePage{
     -webkit-text-stroke: .5px black;
@@ -11,8 +13,27 @@ html {
     
   }
   .contactPage {
-    color: blue;
+    -webkit-text-stroke: .5px black;
+    color: white;
   }
   .menuPage {
-    color: forestgreen;
+    -webkit-text-stroke: .5px black;
+    color: white;
+  }
+  .menuPage.notSelected {
+    display: none;
+  }
+  .contactPage.notSelected {
+    display: none;
+  }
+  .homePage.notSelected {
+    display: none;
+  }
+  #navBar{
+    
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #navBar>*{
+    flex-grow: 1;
   }

@@ -2,6 +2,7 @@
     const mainDiv = document.getElementById('main')
     const homePageDiv = document.createElement('div')
     homePageDiv.classList.add('homePage')
+    homePageDiv.setAttribute('id', 'homePage')
     mainDiv.appendChild(homePageDiv)
 
 

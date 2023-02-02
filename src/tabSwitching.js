@@ -5,32 +5,35 @@ import { homeHeader, homeBody, homeEnd } from './homePage';
 import {menuHeader, menuBody} from './menuPage';
 
 
-const mainDiv = document.getElementById('main')
+const homePage = document.getElementById('homePage')
+const menuPage = document.getElementById('menuPage')
+const contactPage = document.getElementById('contactPage')
 
 
 const homeTab = () => {
-    while (mainDiv.firstChild){
-        mainDiv.removeChild(mainDiv.firstChild)
-    }
-    homeHeader()
-    homeBody()
-    homeEnd()
+    
+    homePage.classList.remove('notSelected')
+    
+    menuPage.classList.add('notSelected')
+    contactPage.classList.add('notSelected')
 }
 
 const menuTab = () => {
-    while (mainDiv.firstChild){
-        mainDiv.removeChild(mainDiv.firstChild)
-    }
-    menuHeader()
-    menuBody()
+    
+    menuPage.classList.remove('notSelected')
+    
+    
+    contactPage.classList.add('notSelected')
+    homePage.classList.add('notSelected')
 }
 
 const contactTab = () => {
-    while (mainDiv.firstChild){
-        mainDiv.removeChild(mainDiv.firstChild)
-    }
-    contactHeader()
-    contactBody()
-    contactEnd()
+    
+    contactPage.classList.remove('notSelected')
+    
+    
+    menuPage.classList.add('notSelected')
+    homePage.classList.add('notSelected')
+
 }
 export {homeTab, menuTab, contactTab}

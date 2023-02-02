@@ -1,7 +1,9 @@
 const mainDiv = document.getElementById('main')
 const contactPageDiv = document.createElement('div')
-contactPageDiv.classList.add('contactPage')
+contactPageDiv.classList.add('contactPage', 'notSelected')
+contactPageDiv.setAttribute('id', 'contactPage')
 mainDiv.appendChild(contactPageDiv)
+
 const contactHeader = () => {
     const contactHeader = document.createElement('h1')
     const contactHeaderContent =  document.createTextNode('Contact Page')
